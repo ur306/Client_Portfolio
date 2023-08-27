@@ -32,7 +32,7 @@ const routes : Routes=[
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
 
   ],
   providers: [],
