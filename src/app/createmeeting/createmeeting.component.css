@@ -1,0 +1,9 @@
+
+.text-center{
+  text-align: center;
+}
+.btn-color{
+  background-color: #3463fc;
+  color: white;
+  border-radius: 10px;
+}
