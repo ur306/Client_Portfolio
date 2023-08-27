@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 //establish the connection with the dB
 const db=mysql.createConnection({
 host:'localhost',
-user:'urmila',
+user:'root',
 password:'root',
 database:'clientportfolio'
 });
