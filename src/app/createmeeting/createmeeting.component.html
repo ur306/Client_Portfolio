@@ -12,19 +12,19 @@
         <div class="row p-2">
           <div class="col-lg-2"></div>
           <div class="col-lg-5"><label for=""><b>Metting Topic</b></label></div>
-          <div class="col-lg-3"><input type="text" name="mettingtopic" id="" placeholder="Enter Metting Topic"></div>
+          <div class="col-lg-3"><input type="text" name="mettingtopic" id="" [(ngModel)]="topic" placeholder="Enter Metting Topic"></div>
           <div class="col-lg-2"></div>
         </div>
         <div class="row p-2">
           <div class="col-lg-2"></div>
           <div class="col-lg-5"><label for=""><b>Number of People</b></label></div>
-          <div class="col-lg-3"><input type="text" name="noofpeople" id="" placeholder="Enter Number of people"></div>
+          <div class="col-lg-3"><input type="text" name="noofpeople" id="" [(ngModel)]="noofppl" placeholder="Enter Number of people"></div>
           <div class="col-lg-2"></div>
         </div>
         <div class="row p-2">
           <div class="col-lg-2"></div>
           <div class="col-lg-5"><label for=""><b>Start Time</b></label></div>
-          <div class="col-lg-3"><input type="datetime-local" name="starttime" id=""></div>
+          <div class="col-lg-3"><input type="datetime-local" name="starttime" [(ngModel)]="starttime" id=""></div>
           <div class="col-lg-2"></div>
         </div>
         </form>
@@ -35,7 +35,10 @@
 </div>
 <div class="card-footer p-4">
   <div class="text-center">
-    <input class="btn-color" type="button" value="Schedule a metting" name="" id="">
+    <button class="btn-color" (click)="shedulemet()">Schedule a metting</button>
+  </div>
+  <div>
+    {{message}}
   </div>
 </div>
 </div>

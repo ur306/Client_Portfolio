@@ -9,8 +9,11 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 const routes : Routes=[
+  {
+    path: '', redirectTo: 'Clients', pathMatch: 'full'
+  },
  {path:'Clients', component:CreateclientComponent},
  {path:'Meeting', component:CreatemeetingComponent},
  {path:'Home', component:HomeComponent}
@@ -27,8 +30,10 @@ const routes : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
